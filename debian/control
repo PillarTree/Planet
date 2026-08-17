@@ -1,0 +1,25 @@
+Source: planet
+Section: utils
+Priority: optional
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: planet
+Architecture: all
+Depends: python3 (>= 3.9), python3-pil, python3-xlib, python3-apt
+Recommends: python3-numpy, xdg-utils, xclip
+Description: application installer/manager for X11 in pure Python
+ Planet is an application installer and manager for X11, written from scratch
+ in Python using only python-xlib and python-apt. It renders its entire UI with
+ a software framebuffer (Pillow + XPutImage), so it works without any desktop
+ toolkit (no GTK, no Qt, no Tk).
+ .
+ Features:
+  * browse, search, install, remove and purge software packages
+  * list and grid views with sortable columns (name, size, version)
+  * background-thread APT operations -- the UI never blocks
+  * keyboard-first navigation (typeahead search, Ctrl+I install, etc.)
+  * context menu and toolbar for mouse users
+  * dark theme with package status colour coding (installed / upgrade / new)

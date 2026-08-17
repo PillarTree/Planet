@@ -1,0 +1,6 @@
+Planet (0.1.0-1) unstable; urgency=low
+
+  * Initial release.
+  * X11 application installer/manager in pure Python (python-xlib + Pillow).
+
+-- Planet Developers <planet@users.noreply.github.com>  Sun, 16 Aug 2026 12:00:00 +0000
